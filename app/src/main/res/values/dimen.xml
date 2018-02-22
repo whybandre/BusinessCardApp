@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+
+    <!-- Top Bar -->
+    <dimen name="top_bar_height">72dp</dimen>
+
+
+    <!-- Card -->
+    <dimen name="card_text_height">48dp</dimen>
+    <dimen name="padding_left">16dp</dimen>
+    <dimen name="drawablePadding">32dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <!-- Card Text Size :::Material Design Subheading = 16sp | Body = 14sp::: -->
+    <dimen name="card_text_size">16sp</dimen>
+
+
+    <!-- Card Line Separator-->
+    <dimen name="card_line_height">1dp</dimen>
+    <dimen name="card_line_margin">16dp</dimen>
+
+
+    <!-- Share Button -->
+    <dimen name="share_button_margin_left">48dp</dimen>
+    <dimen name="share_button_margin_right">48dp</dimen>
+
+    <dimen name="share_button_text_size_MD">14sp</dimen>
+
+
+
+
+
+
+
+
+
+
+</resources>

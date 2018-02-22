@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/o_prego_da_peixaria_horizontal"
+    android:orientation="horizontal">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonsPanel">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/company_logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/topBarBackground"
+                android:contentDescription="@string/company_name"
+                android:foregroundGravity="center"
+                android:src="@drawable/all_inclusive" />
+
+
+            <LinearLayout
+                android:id="@+id/contactCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/company_logo"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/background_with_shadow"
+                android:elevation="@dimen/card_elevation"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_text_height"
+                    android:contentDescription="@string/company_name"
+                    android:drawableLeft="@drawable/all_inclusive"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/company_name"
+                    android:textSize="@dimen/card_text_size" />
+
+                <View
+                    android:id="@+id/lineSeparator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/card_line_height"
+                    android:layout_margin="@dimen/card_line_margin"
+                    android:background="@color/cardLineColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_text_height"
+                    android:contentDescription="@string/company_phone_number"
+                    android:drawableLeft="@drawable/phone"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:gravity="left|center_vertical"
+                    android:onClick="callCompany"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/company_phone_number"
+                    android:textSize="@dimen/card_text_size" />
+
+                <View
+                    android:id="@+id/lineSeparator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/card_line_height"
+                    android:layout_margin="@dimen/card_line_margin"
+                    android:background="@color/cardLineColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_text_height"
+                    android:contentDescription="@string/company_address"
+                    android:drawableLeft="@drawable/map_marker"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:gravity="left|center_vertical"
+                    android:onClick="goToAddress"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/company_address"
+                    android:textSize="@dimen/card_text_size" />
+
+                <View
+                    android:id="@+id/lineSeparator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/card_line_height"
+                    android:layout_margin="@dimen/card_line_margin"
+                    android:background="@color/cardLineColor" />
+
+                <TextView
+                    android:id="@+id/openHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_text_height"
+                    android:contentDescription="@string/company_open_hours"
+                    android:drawableLeft="@drawable/clock"
+                    android:drawablePadding="@dimen/drawablePadding"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/padding_left"
+                    android:text="@string/company_open_hours"
+                    android:textSize="@dimen/card_text_size" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactCard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/share_button_margin_left"
+                android:layout_marginRight="@dimen/share_button_margin_right"
+
+                android:contentDescription="@string/for_share"
+
+
+                android:onClick="shareIntent"
+                android:text="@string/for_share"
+
+                android:textAllCaps="true"
+                android:textSize="@dimen/share_button_text_size_MD"
+
+                android:theme="@style/sendButton" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/gplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/company_gplus"
+            android:onClick="goToGPlus"
+            android:src="@drawable/google_plus" />
+
+        <ImageButton
+            android:id="@+id/linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gplus"
+            android:contentDescription="@string/company_linkedin"
+            android:onClick="goToLinkedin"
+            android:src="@drawable/linkedin" />
+
+        <ImageButton
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/linkedin"
+            android:contentDescription="@string/company_website"
+            android:onClick="goToCompanyWebsite"
+            android:src="@drawable/web" />
+
+        <ImageButton
+            android:id="@+id/qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/site"
+            android:contentDescription="@string/company_qrcode"
+            android:onClick="showQrCode"
+            android:src="@drawable/qrcode" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

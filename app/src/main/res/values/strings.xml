@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Business Card App</string>
+
+    <string name="for_share">Share Contacts</string>
+
+
+
+
+    <string name="company_name">Company Name</string>
+    <string name="company_phone_number">+351 21 347 1356</string>
+    <string name="company_address">Rua da Escola Politécnica 40 Lisboa</string>
+    <string name="company_open_hours">12:30–00:00</string>
+
+
+
+
+    <string name="company_gplus">https://plus.google.com/create</string>
+    <string name="company_linkedin">https://www.linkedin.com</string>
+    <string name="company_website">http://example.com</string>
+    <string name="company_qrcode">https://www.the-qrcode-generator.com</string>
+
+
+
+
+
+
+
+
+
+
+
+</resources>
